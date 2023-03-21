@@ -31,10 +31,10 @@ first_decision = input("You're at a cross road. where do you want to go? \"left\
 if (first_decision == "left") or (first_decision == "Left"):
     second_decision = input("You've to come a lake. There is an island in the middle of the lake. " + 'Type "wait" to wait for a boat. Type "swim" to swim accross.\n')
     if (second_decision == "wait") or (second_decision == "Wait"):
-        third_decision = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n")
-        if (third_decision == "yellow") or (third_decision == "Yellow"):
+        third_decision = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n").lower()
+        if (third_decision == "yellow"):
             print("You found the treasure! You Win!")
-        elif (third_decision == "red") or (third_decision == "Red"):
+        elif (third_decision == "red"):
             print("It's a room of fire. Game Over.")
         else:
             print("You enter a room of beast. Game Over.")        
